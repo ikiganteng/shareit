@@ -37,8 +37,8 @@ function add($deviceid, $identi, $trace){
     if ($err) {
     echo "cURL Error #:" . $err;
     } else {
-    echo $res = '[<font color='blue'>Response : ' .$json['returnCode'];
-    echo $type = '</font> | <font color='green'>'.$json['result']['name'].'</font>] ' ;
+    echo $res = '[<font color="blue">Response : ' .$json['returnCode'];
+    echo $type = '</font> | <font color="green">'.$json['result']['name'].'</font>] ' ;
     }
 }
 
@@ -62,7 +62,7 @@ function chance($deviceid, $identi, $trace){
     if ($err) {
     echo "cURL Error #:" . $err;
     } else {
-    echo $type = '[<font color='red'>Chance : '.$json['result']['chances'].'</font>]' ;
+    echo $type = '[<font color="red">Chance : '.$json['result']['chances'].'</font>]' ;
     }
 }
 echo "Input Jumlah: ";
