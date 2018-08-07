@@ -1,6 +1,6 @@
 # shareit
 
-## tutor termusx
+## tutor termux
 * $ pkg install php
 * $ pkg install git
 * $ git clone https://github.com/ikiganteng/shareit.git
