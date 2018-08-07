@@ -38,7 +38,7 @@ function add($deviceid, $identi, $trace){
     echo "cURL Error #:" . $err;
     } else {
     echo $res = ' Response : ' .$json['returnCode'];
-    echo $type = ','.$json['result']['name'].'!' ;
+    echo $type = ' ['.$json['result']['name'].'] ' ;
     }
 }
 
@@ -73,8 +73,11 @@ echo "Input Identity ID: ";
 $identi = read();
 echo "Input Trace ID: ";
 $trace = read();
+echo "Input Sleep: ";
+$sleep = read();
 for ($x = 0; $x <= $jumlah; $x++){
     $go = add($deviceid, $identi, $trace);
 	$ib = chance($deviceid, $identi, $trace);
-    echo ' '. date("H:i:s").  ' ' .$go. " ".$ib. "\n";
+    echo ' '. date("H:i:s"). ' '.$go.''.$ib. "\n";
+	sleep($sleep);
 }
