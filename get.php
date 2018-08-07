@@ -37,8 +37,8 @@ function add($deviceid, $identi, $trace){
     if ($err) {
     echo "cURL Error #:" . $err;
     } else {
-    echo $res = ' Response : ' .$json['returnCode'];
-    echo $type = ' ['.$json['result']['name'].'] ' ;
+    echo $res = '[Response : ' .$json['returnCode'];
+    echo $type = '|'.$json['result']['name'].'] ' ;
     }
 }
 
@@ -77,7 +77,7 @@ echo "Input Sleep: ";
 $sleep = read();
 for ($x = 0; $x <= $jumlah; $x++){
     $go = add($deviceid, $identi, $trace);
-	$ib = chance($deviceid, $identi, $trace);
+    $ib = chance($deviceid, $identi, $trace);
     echo ' '. date("H:i:s"). ' '.$go.''.$ib. "\n";
-	sleep($sleep);
+    sleep($sleep);
 }
