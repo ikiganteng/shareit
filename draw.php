@@ -73,7 +73,7 @@ echo "Input Identity ID: ";
 $identi = read();
 echo "Input Trace ID: ";
 $trace = read();
-echo "Input Sleep: ";
+echo "Input Sleep (dalam detik): ";
 $sleep = read();
 for ($x = 0; $x <= $jumlah; $x++){
     $go = add($deviceid, $identi, $trace);
