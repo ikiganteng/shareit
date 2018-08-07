@@ -38,7 +38,7 @@ function add($deviceid, $identi, $trace){
     echo "cURL Error #:" . $err;
     } else {
     echo $res = '[Response : ' .$json['returnCode'];
-    echo $type = '|'.$json['result']['name'].'] ' ;
+    echo $type = ' | '.$json['result']['name'].'] ' ;
     }
 }
 
